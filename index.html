@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>segunda aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link rel="stylesheet" type="text/css" href="visor/engine1/style.css" />
+	<script type="text/javascript" src="visor/engine1/jquery.js"></script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/dia.jpg','imagenes/aa.jpg','imagenes/global.jpg','imagenes/refle.jpg')">
+
+<div data-role="page" id="Principal" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Informacion De la Tierra</h1>
+  </div>
+<div>
+<!-- Start WOWSlider.com BODY section -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+<li><img src="visor/data1/images/cele.jpg" alt="cele" title="cele" id="wows1_0"/></li>
+<li><img src="visor/data1/images/diati.jpg" alt="diati" title="diati" id="wows1_1"/></li>
+<li><img src="visor/data1/images/tie.jpg" alt="tie" title="tie" id="wows1_2"/></li>
+<li><img src="visor/data1/images/cale.jpg" alt="cale" title="cale" id="wows1_3"/></li>
+<li><img src="visor/data1/images/cambio.jpg" alt="cambio" title="cambio" id="wows1_4"/></li>
+</ul></div>
+<div class="ws_bullets"><div>
+<a href="#" title="cele"><img src="visor/data1/tooltips/cele.jpg" alt="cele"/>1</a>
+<a href="#" title="diati"><img src="visor/data1/tooltips/diati.jpg" alt="diati"/>2</a>
+<a href="#" title="tie"><img src="visor/data1/tooltips/tie.jpg" alt="tie"/>3</a>
+<a href="#" title="cale"><img src="visor/data1/tooltips/cale.jpg" alt="cale"/>4</a>
+<a href="#" title="cambio"><img src="visor/data1/tooltips/cambio.jpg" alt="cambio"/>5</a>
+</div></div>
+<span class="wsl"><a href="http://wowslider.com">Slideshow Embed</a> by WOWSlider.com v4.8</span>
+	<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="visor/engine1/wowslider.js"></script>
+	<script type="text/javascript" src="visor/engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-"b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Fecha de Conmemoración </h2>
+<p>Toca para ver la Información</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Por Qué se celebra?</h2>
+<p>Toca para ver la Información</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Cuidados al Planeta</h2>
+<p>Toca para ver la Información</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Cambios Climaticos</h2>
+<p>Toca para ver la Información</p>
+</a>
+</li>
+ <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Reflexión</h1>
+      <div>
+       <center><p>Tenemos que cambiar el planeta ya que esta muy contaminado y eso afecta tanto a a los seres vivos como al mundo. Hacer unos cambios al planeta no estan dificil como dicen, solo se necesita la voluntad de hacerlo y apoyo a los que deverdad lo quieren hacer. </p>
+       <p>Para poder hacer el poyo solo se necesita empezar por tu colonia, hacer que los vecinos se unan y empezar a limpiar para que no tenga contaminacion.</p>
+       <p> Mas adelante puedes hacer campañas para tu comunidad y hacer que todos se unan al apoyo pues lo que haces es algo bueno no solo para ti si no para los demas y lo mas importante para el planeta que como ya sabemos la Tierra es el unico planeta que hay vida</p></center>
+      <br>
+      </div>
+      <div>
+      <!-- Start WOWSlider.com -->
+<iframe src="visor2/indexwow2.html" style="width:50%;height:40%;max-width:500%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+     </div>
+     </div> 
+<div>
+</ul>
+</div>
+  <div data-role="footer" align="center" data-theme="a">
+  <div>
+  <img src="res/android/mdpi.png" width="46" height="46">
+  </div>
+  <div>
+  <h4>Aplicacion cinco </h4>
+  <h4>Wendy Karina Rivera Martinez</h4>
+  </div>
+ </div>
+ </div>
+ 
+ 
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Dia de la Tierra</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+   <p>El Día de la Tierra es un día celebrado en muchos países el 22 de abril.</p>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/dia.jpg',1)"><img src="imagenes/diati.jpg" width="500" height="335" id="Image9"></a> </div>
+   </div>
+   <div data-role="footer" data-theme="b" data-position="fixed">
+    <h4>Aplicacion cinco, WKRM</h4>
+    </div>
+    </div>
+    </div>
+    
+    <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>¿Por qué se celebra?</h1>
+     </div>
+     <div data-role="content" align="center">
+      <div>
+        <p>Se celebra porque ese día es para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos</p>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/refle.jpg',1)"><img src="imagenes/cele.jpg" width="450" height="400" id="Image12"></a> </div>
+       </div>
+       <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Aplicacion cinco, WKRM</h4>
+       </div>
+       </div>
+       </div>
+
+      
+    <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>regla de las 3 erres</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Reducir</h1>
+      <div>
+      <p>Si reducimos el problema, disminuimos el impacto en el medio ambiente. Los problemas de concienciación, habría que solucionarlos empezando por esta erre. La reducción puede realizarse en 2 niveles: reducción del consumo de bienes o de energía. De hecho, actualmente la producción de energía produce numerosos desechos (desechos nucleares, dióxido de carbono...). El objetivo sería:</p>
+      <ul>
+      <li>Reducir o eliminar la cantidad de materiales destinados a un uso único (por ejemplo, los embalajes).</li>
+      <li>Adaptar los aparatos en función de sus necesidades (por ejemplo poner lavadoras y lavavajillas llenos y no a media carga).</li>
+      <li>Reducir pérdidas energéticas o de recursos: de agua, desconexión de aparatos eléctricos en stand by, conducción eficiente, desconectar transformadores, etc.</li>
+      </ul>
+      <br>
+      </div>
+      <div>
+      <img src="imagenes/reducir.jpg" width="50%" height="50%"> </div>
+     </div>
+     </div> 
+     
+     <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Reutilizar</h1>
+      <div>
+      <p>Segunda erre más importante, igualmente debido a que también reduce impacto en el medio ambiente, indirectamente. Ésta se basa en reutilizar un objeto para darle una segunda vida útil. Todos los materiales o bienes pueden tener más de una vida útil, bien sea reparándolos para un mismo uso o con imaginación para un uso diferente.</p>
+      <p> Un Ejemplo:</p>
+      <p> Utilizar la otra cara de las hojas impresas, rellenar botellas.</p>
+      <p>Las botellas desechables se pueden convertir en ladrillos ecológicos, si en su interior se les ponen todas las bolsas de plástico que ya no se usan. Las cajitas o frascos de PVC, metal o plástico se pueden pintar o decorar con técnicas de decoupage y utilizarse nuevamente ahora para guardar distintos elementos. El papel usado se puede transformar en pulpa y crear nuevas hojas para escribir.<p>
+      <br>
+      </div>
+      <div>
+      <img src="imagenes/reutilizar.jpg" width="50%" height="50%"> </div>
+     </div>
+     </div> 
+     
+     <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Reciclar</h1>
+      <div>
+      <p>Ésta es una de las erres más populares debido a que el sistema de consumo actual ha preferido usar envases de materiales reciclables (plásticos y bricks, sobre todo), pero no biodegradables. De esta forma se necesita el empleo en mayor forma personal y energía en el proceso.</p>
+      <p> Un ejemplo:</p>
+      <p> El vidrio y la mayoría de plásticos se pueden reciclar calentándolos hasta que se funden y dándoles una nueva forma. Es como utilizar algo de su principio, aunque la eficiencia no es del cien por cien en general. En el caso del vidrio en concreto, sí es completamente reciclable: de una botella se podría obtener otra botella. </p>
+      <br>
+      </div>
+      <div>
+      <img src="imagenes/reciclar.jpg" width="50%" height="50%"> </div>
+     </div>
+     </div> 
+     <br>
+        <a href="https://cuidarelplaneta.wordpress.com/"> Clic aquí para ver mas informacion </a><br>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/aa.jpg',1)"><img src="imagenes/tie.jpg" width="400" height="400" id="Image10"></a> </div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion cinco, WKRM</h4>
+</div>
+</div>
+</div>
+       
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Cambios Climaticos</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <p> El Cambio Climático es un cambio significativo y duradero de los patrones locales o globales del clima, las causas pueden ser naturales, como por ejemplo, variaciones en la energía que se recibe del Sol, erupciones volcánicas, circulación oceánica, procesos biológicos y otros, o puede ser causada por influencia antrópica (por las actividades humanas), como por ejemplo, a través de la emisión de CO2 y otros gases que atrapan calor, o alteración del uso de grandes extensiones de suelos que causan, finalmente, un calentamiento global.</P>
+    </div>
+      <img src="imagenes/cambio.jpg" width="50%" height="50%">
+   </div>
+   <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Calentamiento Global </h1>
+      <div>
+      <p>El Calentamiento Global es un aumento de la temperatura de la atmósfera terrestre que se ha estado observando desde finales del siglo XIX. Se ha observado un aumento de aproximadamente 0.8 ºC desde que se realizan mediciones confiables, dos tercios de este aumento desde 1980. Hay una certeza del 90% (actualizada a 95% en el 2013) de que la causa del calentamiento es el aumento de gases de efecto invernadero que resultan de las actividades humanas como la quema de combustibles fósiles (carbón, gasolina, gas natural y petróleo) y la deforestación.</p>
+      <br>
+      </div>
+      <div>
+      <center> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/global.jpg',1)"><img src="imagenes/cale.jpg" width="400" height="400" id="Image11"></a></center> </div>
+     </div>
+     </div> 
+     
+     
+     <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>El Efecto Invernadero</h1>
+      <div>
+      <p>El Efecto Invernadero es un fenómeno natural en el cuál la radiación de calor de la superficie de un planeta, en este caso la Tierra, es absorbida por los gases de la atmósfera y es reemitida en todas direcciones, lo que resulta en un aumento de la temperatura superficial. Los gases más eficientes en absorber el calor se llaman gases de efecto invernadero o gases de invernadero, entre ellos está el CO2 que es el que la humanidad en su consumo de recursos ha aumentado a niveles nunca vistos previamente y está causando el calentamiento global.</p>
+      <br>
+      </div>
+      <div>
+      <center> <img src="imagenes/efec.jpg" width="70%" height="50%"></center>
+       </div>
+     </div>
+     </div> 
+  <div data-role="footer" data-theme="b" data-position="fixed">
+     <h4>Aplicacion cinco, WKRM</h4>
+    </div>              
+ </div>
+</div>
+ 
+</body>
+</html>
